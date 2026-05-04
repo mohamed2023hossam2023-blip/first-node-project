@@ -95,8 +95,11 @@
               <select name="country" id="inputCountry" class="form-select">
                 <option selected hidden disabled>Choose here ...</option>
 
-                <option>Morocco</option>
-                <option>Egypt</option>
+
+                <% const countries = ["Egypt", "Saudi Arabia", "United Arab Emirates", "Qatar", "Kuwait", "Bahrain", "Oman", "Jordan", "Lebanon", "Iraq", "Syria", "Palestine", "Morocco", "Algeria", "Tunisia", "Libya", "Sudan", "Yemen", "Somalia", "Turkey", "Germany", "France", "Italy", "Spain", "United Kingdom", "United States", "Canada", "Australia"]; %>
+                <% countries.forEach(item => { %>
+                  <option><%= item %></option>
+                <% }) %>
               </select>
             </div>
           </div>

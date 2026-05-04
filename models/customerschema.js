@@ -11,7 +11,7 @@ phoneNumber: String,
 age: Number,
 country: String,
 gender: String
-});
+},{ timestamps: true });
 
 // Create a model based on that schema
 const User = mongoose.model("customer", userSchema);
